@@ -6,3 +6,16 @@ for (int i = 0; i < size; i++)
         Console.Write($"Введите элемент массива {i}: ");
         mass[i]  = Console.ReadLine();
     }
+
+newArr(mass);
+void newArr (string [] mass)
+{
+        Console.Write("Исходный массив: [");
+        for (int i = 0; i < mass.Length - 1; i++)
+        {
+            Console.Write($"{mass[i]}, ");
+        }
+        Console.Write($"{mass[mass.Length - 1]}");
+        Console.Write("]");
+}
+Console.WriteLine();
