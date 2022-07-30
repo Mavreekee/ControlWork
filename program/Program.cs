@@ -19,3 +19,18 @@ void newArr (string [] mass)
         Console.Write("]");
 }
 Console.WriteLine();
+
+searchSymbols(mass);
+void searchSymbols (string [] mass)
+{
+    Console.Write("Массив после: [");
+    for (int i = 0; i < mass.Count(); i++)
+    {
+        if (mass[i].Length <= 3)
+        {
+        Console.Write($"{mass[i]}, ");  
+        }
+    }
+    Console.Write("]");
+}
+Console.WriteLine();
